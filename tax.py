@@ -50,7 +50,7 @@ class TaxCalculatorApp:
 
         # 创建一个框架，用于放置输入行
         self.output_frame = tk.Frame(self.canvas)
-        self.canvas.create_window((0, 0), window=self.output_frame, anchor="nw")
+        self.canvas.create_window((0, 0), window=self.output_frame, anchor="nw",height=1000)
 
         self.canvas.bind("<Configure>", self.on_canvas_configure)
 
